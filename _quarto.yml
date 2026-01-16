@@ -1,0 +1,14 @@
+project:
+  type: website
+  execute-dir: project
+  output-dir: _site
+  render:
+    - index.qmd
+
+execute:
+  freeze: auto
+
+repo-url: https://example.com
+site-url: https://example.com
+data-url: https://example.com
+data-license: CC0

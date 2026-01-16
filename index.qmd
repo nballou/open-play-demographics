@@ -1,0 +1,113 @@
+---
+title: |
+  A title goes here
+author:
+  - name: author
+    corresponding: true
+    orcid: 0000-0000-0000-0000
+    email: name@domain.com
+    affiliations:
+      - ref: 1
+    # roles:
+    #   - conceptualization
+    #   - data curation
+    #   - methodology
+    #   - formal analysis
+    #   - writing
+
+affiliations:
+  - id: 1
+    name: University
+    department: Department
+csl: https://www.zotero.org/styles/apa
+bibliography: references.bib
+keywords: [keywords]
+editor_options:
+  chunk_output_type: console
+  markdown:
+    wrap: none
+knitr:
+  opts_chunk:
+    cache: true
+    warning: false
+    message: false
+    fig-width: 6
+    fig-asp: 0.618
+    out-width: 80%
+    fig-align: center
+code-links: repo
+format:
+  html:
+    theme:
+      light: united
+      dark: darkly
+    toc: true
+    toc-depth: 2
+    toc-location: right
+    number-sections: true
+    fontsize: 13pt
+    code-fold: true
+    code-summary: "Show code"
+    code-tools: true
+    echo: true
+    embed-resources: false
+    page-layout: article
+    grid:
+      body-width: 900px
+      margin-width: 250px
+    other-links:
+      - text: Stage 1 Registered Report
+        href: https://example.com
+        icon: file-pdf
+      - text: Data
+        href: https://example.com
+        icon: link
+  preprint-typst:
+    echo: false
+    wordcount: true
+    theme: jou
+    citeproc: true
+    mainfont: "Liberation Serif"
+    sansfont: "Liberation Sans"
+    include-before-body:
+      - text: "#show <refs>: set par(hanging-indent: 1.4em)"
+  docx:
+    echo: false
+---
+
+```{r}
+#| label: libraries
+
+```
+
+```{r}
+#| label: load-data
+
+```
+
+
+To make a figure or table span both columns in PDF (html and word do not have two-column formats), you can use this code: 
+
+```{verbatim}
+::: {.place arguments='top, scope: "parent", float: true'}
+
+:::
+```
+
+
+## Data Availability
+
+TODO
+
+## Funding
+
+TODO
+
+## Conflicts of Interest
+
+TODO
+
+# References
+
+::: {#refs}
+:::

@@ -82,7 +82,7 @@ format:
       - text: "#show <refs>: set par(hanging-indent: 1.4em)"
   docx:
     echo: false
-  # ACM format in _quarto-acm.yml - render with: quarto render --profile acm
+  # ACM format in _quarto-acm.yml - render with: quarto render --profile acm --to acm-pdf
 ---
 
 ```{r}
@@ -2079,6 +2079,17 @@ Claude Code (claude-opus-4-5-20251101) was used to prepare and document analysis
 
 ```{=latex}
 \newpage
+\appendix
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+```
+
+```{=typst}
+#counter(figure.where(kind: "quarto-float-tbl")).update(0)
+#counter(figure.where(kind: "quarto-float-fig")).update(0)
+#set figure(numbering: it => "A" + str(it))
 ```
 
 # Appendix {.appendix}

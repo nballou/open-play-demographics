@@ -1,4 +1,4 @@
-# ACM format profile - render with: quarto render --profile acm
+# ACM format profile - render with: quarto render --profile acm --to acm-pdf
 format:
   acm-pdf:
     output-file: index-acm.pdf

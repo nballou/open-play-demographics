@@ -9,6 +9,7 @@ The rendered manuscript is available at [https://nballou.github.io/open-play-dem
 Most knowledge about "who plays video games" comes from surveys subject to recall bias and social desirability effects. This study uses publicly available behavioral logs from Steam, Xbox, and Nintendo—spanning 1.5 million hours from 3,768 US and UK adults (18–40 years old)—to examine how play patterns differ according to age, gender, ethnicity, and neurodiversity.
 
 Key findings include:
+
 - Older players' peak playtime occurs approximately 1 hour earlier in the day
 - Women tend to re-engage with the same game over longer time periods
 - Genre preferences vary across demographic groups (e.g., sports games, simulation, RPGs)
@@ -34,6 +35,7 @@ Key findings include:
 This analysis uses data from the [Open Play dataset](https://doi.org/10.5281/zenodo.17536656), which contains multi-platform digital trace data from US and UK video game players. The data is automatically downloaded from Zenodo when rendering the manuscript.
 
 Key data components used:
+
 - **Digital trace data**: Hourly and session-level gameplay records from Steam, Xbox, and Nintendo Switch
 - **Demographic data**: Age, gender, ethnicity, and neurodiversity status from intake surveys
 - **Game metadata**: Genre classifications harmonized across platforms
@@ -48,17 +50,20 @@ Key data components used:
 ### Setup
 
 1. Clone this repository:
+2. 
    ```bash
    git clone https://github.com/nballou/open-play-demographics.git
    cd open-play-demographics
    ```
 
 2. Restore the R environment:
+3. 
    ```r
    renv::restore()
    ```
 
 3. Render the manuscript:
+4. 
    ```bash
    quarto render
    ```
@@ -68,12 +73,14 @@ The first render will download the data from Zenodo (~194MB), which may take a f
 ### Output Formats
 
 The manuscript renders to multiple formats:
+
 - **HTML** — Interactive web version with code folding
 - **PDF (Typst)** — Preprint format (`index-typst.pdf`)
 - **PDF (ACM)** — Conference submission format (`index-acm.pdf`)
 - **Word** — For journal submissions requiring `.docx`
 
 To render a specific format:
+
 ```bash
 quarto render index.qmd --to html
 quarto render index.qmd --to preprint-typst
@@ -91,21 +98,18 @@ The manuscript includes:
 5. **Intersectional analysis** — Heatmap examining combinations of demographic characteristics
 6. **Variance decomposition** — Eta-squared and R² quantifying how much demographics explain
 
-## Citation
+<!--## Citation
 
 If you use this code or analysis, please cite:
 
 ```
-Ballou, N. (2026). Multi-platform trace data reveal demographic differences in video
-game play, but individuals vary far more. Proceedings of the ACM SIGCHI Annual
-Symposium on Computer-Human Interaction in Play (CHI PLAY '26).
-```
+TODO
+```-->
 
 ## License
 
-Code: GPL-3.0
-Manuscript content: CC-BY-4.0
+CC0
 
 ## Contact
 
-Nick Ballou — [nick@nickballou.com](mailto:nick@nickballou.com) — [@nikiballou](https://twitter.com/nikiballou)
+Nick Ballou — [nick@nickballou.com](mailto:nick@nickballou.com)

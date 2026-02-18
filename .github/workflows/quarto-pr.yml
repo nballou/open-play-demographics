@@ -17,5 +17,4 @@ jobs:
       - name: Render (NO EXECUTION, HTML + Typst; must use _freeze/)
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          args: |
-            --no-execute --to html,preprint-typst
+          args: "--no-execute --to html --to preprint-typst"

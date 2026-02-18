@@ -6,9 +6,9 @@ project:
     - index.qmd
 
 execute:
-  freeze: auto
+  freeze: true
 
-repo-url: https://example.com
-site-url: https://example.com
+repo-url: https://github.com/nballou/open-play-demographics
+site-url: https://nballou.github.io/open-play-demographics/
 data-url: https://example.com
 data-license: CC0

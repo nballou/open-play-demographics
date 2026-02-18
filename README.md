@@ -31,7 +31,7 @@ cd YOUR-REPO-NAME
 
 The PDF output uses Matti Vuorre's preprint extension for Typst. Install it by running:
 ```bash
-quarto add mvuorre/preprint
+quarto add mvuorre/quarto-preprint
 ```
 
 This creates an `_extensions/` directory in your project. Commit this directory to version control.

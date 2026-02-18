@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "TODO"
+message: "This repository contains an archived release of our reproducible manuscript about gaming demographics."
+type: software
+authors:
+  - family-names: Ballou
+    given-names: Nick
+    orcid: "https://orcid.org/0000-0003-4126-0696"
+    affiliation: "Imperial College London, Dyson School of Design Engineering"
+abstract: >-
+  Code and materials for 'All BANG, little buck: Need-related experiences
+  are weakly linked with behavior in the video game domain.'
+
+  Contents: Reproducible Quarto manuscript with all analyses; R code for
+  multilevel within-between models, multiple imputation, and visualizations;
+  helper functions for processing multi-platform digital trace data.
+
+  This repository analyzes data from the Open Play dataset
+  (https://doi.org/10.5281/zenodo.17536656), which contains 1.5 million hours of digital trace data from 2k+ U.S. and UK players, combined with repeated psychological measures.
+keywords:
+  - video games
+  - digital trace data
+  - reproducible research
+  - demographics
+license: CC0-1.0
+repository-code: "https://github.com/nballou/open-play-demographics"
+url: "https://nballou.github.io/open-play-demographics/"

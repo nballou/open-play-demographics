@@ -9,6 +9,8 @@
 /.quarto/
 /_site/
 
+data/
+
 .lintr
 settings.json
 
@@ -68,3 +70,12 @@ FORMATTING_GUIDE.md
 # IDE specific files
 .claude/
 .vscode/
+example-ms.qmd
+index.aux
+index.log
+.gitignore
+index.tex
+.gitignore
+index.html
+.gitignore
+index.rmarkdown

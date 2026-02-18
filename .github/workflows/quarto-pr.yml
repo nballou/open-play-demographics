@@ -14,8 +14,8 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.8.25"
-      - name: Render (NO EXECUTION; must use _freeze/)
+      - name: Render (NO EXECUTION, HTML + Typst; must use _freeze/)
         uses: quarto-dev/quarto-actions/render@v2
         with:
           args: |
-            --no-execute
+            --no-execute --to html,preprint-typst

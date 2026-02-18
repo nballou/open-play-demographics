@@ -23,11 +23,11 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.8.25"
-      - name: Render site to _site (NO EXECUTION)
+      - name: Render site to _site (NO EXECUTION, HTML + Typst)
         uses: quarto-dev/quarto-actions/render@v2
         with:
           args: |
-            --no-execute
+            --no-execute --to html,preprint-typst
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

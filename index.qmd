@@ -24,11 +24,11 @@ affiliations:
     city: London
     country: United Kingdom
 abstract: |
-  Most knowledge about "who plays (what) video games" comes from surveys subject to recall bias and social desirability effects. Using publicly available behavioral logs from Steam, Xbox, and Nintendo spanning 1.5 million hours from 3768 US and UK adults (18--40 years old), I present a visualization-driven descriptive analysis of how play patterns differ according to age, gender, ethnicity, and neurodiversity. Results uncover a variety of trends that have rarely been observed in public data: among others, that older players' peak playtime occurs approximately 1 hour earlier in the day, that women tend to re-engage with the same game for a longer time period, and that Black, Asian, and neurotypical players allocate more of their time to sports games than neurodiverse players and other ethnic groups. Despite intriguing group-level trends, however, within-group variation is far larger: demographic characteristics account for at most 5.4% of gameplay behavioral variation. This work provides an empirically grounded complement to survey research and motivates future investigation into the structural and cultural factors shaping play behavior.
+  Most knowledge about "who plays (what) video games" comes from surveys subject to recall bias and social desirability effects. Using publicly available behavioral logs from Steam, Xbox, and Nintendo spanning 1.5 million hours from 3768 US and UK adults (18--40 years old), I present a visualization-driven descriptive analysis of how play patterns differ according to age, gender, ethnicity, and neurodiversity. Results uncover a variety of trends that have rarely been observed in public data: among others, that older players' peak playtime occurs approximately 1 hour earlier in the day, that women tend to re-engage with the same game for a longer time period, and that sports games were more popular among Black, Asian, and neurotypical players than among other ethnic groups and neurodiverse players. Despite intriguing group-level trends, however, within-group variation is far larger: demographic characteristics account for at most 5.4% of gameplay behavioral variation. This work provides an empirically grounded complement to survey research and motivates future investigation into the structural and cultural factors shaping play behavior.
 bibliography: references.bib
 keywords:
   - video games
-  - player demographics
+  - demographics
   - behavioral data
   - descriptive
   - genres
@@ -616,7 +616,7 @@ At the same time, many existing claims about demographic differences in play res
 
 Demographic characteristics such as age, gender, and culture are used pervasively across games research and practice, but with varying degrees of empirical grounding. In theory, demographic variables are routinely positioned as moderators of core constructs within theories related to impulse purchasing [@ZhangEtAl2021Gamification], technology acceptance [@HarnadiEtAl2025Role], social influence [@Liu2016Understanding], and game preferences [@Gonzalez-GonzalezEtAl2022Gender], among others---yet such use often treats demographics as proxies for underlying preferences or motivations without specifying the mechanisms through which they operate. In empirical practice, demographics frequently serve as key predictors of outcomes like player types [@SantosEtAl2025Relationship], esports participation [@KordyakaEtAl2023Gender], or problematic gaming [@Lopez-FernandezEtAl2019Female], but the practical significance of these associations is rarely scrutinized [@VornhagenEtAl2020Statisticala; @Kirk1996Practical]. In industry and HCI research, demographic segmentation guides decisions about targeting, content, and design for groups such as women and older players [@GerlingEtAl2012Game; @KaufmanEtAl2019Not], though segmentation based on what players' recorded behavior is often recognized as more informative [@zotero-item-16756; @YinEtAl2025Modeling]. Across all three arenas, the question of how much demographic categories actually explain about individual behavior remains largely unexamined with behavioral data outside of industry internal research.
 
-Digital trace data, defined as behavioral logs automatically collected by digital devices and online platforms, offers a complementary lens. By observing play directly, trace data sidesteps the recall bias and social desirability effects inherent in self-report, while capturing dimensions of play (such as hour-by-hour temporal patterns or engagement span across titles) that surveys cannot feasibly measure. Trace data thus enables more fine-grained descriptions of play and its demographic composition, supports better monitoring of how the characteristics and behaviors of players change over time, and improves predictions about how play and player populations are likely to evolve in the future. The present article marks one such snapshot, using the [redacted] dataset---a large, multi-platform collection of behavioral logs from US and UK adults---to describe how observed play patterns vary across age, gender, ethnicity, and neurodiversity. 
+Digital trace data, defined as behavioral logs automatically collected by digital devices and online platforms, offers a complementary lens. By observing play directly, trace data sidesteps the recall bias and social desirability effects inherent in self-report, while capturing dimensions of play (such as hour-by-hour temporal patterns or engagement span across titles) that surveys cannot feasibly measure. Trace data thus enables more fine-grained descriptions of play and its demographic composition, supports better monitoring of how the characteristics and behaviors of players change over time, and improves predictions about how play and player populations are likely to evolve in the future. The present article marks one such snapshot in the form of a secondary analysis of the Open Play dataset [@BallouEtAl2025Open]---a large, multi-platform collection of behavioral logs from US and UK adults---to describe how observed play patterns vary across age, gender, ethnicity, and neurodiversity. 
 
 <!-- [@BallouEtAl2025Open] -->
 
@@ -641,7 +641,7 @@ With regard to genre preferences, survey research has found that male gamers are
 
 Platform choice also varies: teenage boys are more likely to play on console, while smartphones and tablets make up a larger share of teenage girls' play [@GottfriedSidoti2024Teens]. Lower socio-economic status has been associated with greater preference for sports games [@Andrews2008Gameplay].
 
-Studies of neurodiverse players have found a preference for RPGs among adults with autism [@MazurekEtAl2015Video], as well as  higher motivations escapism, completionism, and customisation [@MillingtonEtAl2022Brief]. Adolescents with ADHD tend to have higher playtime and problematic gaming [@IsornaFolgarEtAl2024Evaluation]. However, researchers have criticized the games HCI literature on neurodiversity for being prescriptive or focusing on "cures" rather than understanding the diversity of play experiences and preferences among neurodiverse players, and specifically call for more comparisons between neurotypical and neurodiverse behavioral patterns [@@SpielGerling2021Purpose].
+Studies of neurodiverse players have found a preference for RPGs among adults with autism [@MazurekEtAl2015Video], as well as  higher motivations escapism, completionism, and customisation [@MillingtonEtAl2022Brief]. Adolescents with ADHD tend to have higher playtime and problematic gaming [@IsornaFolgarEtAl2024Evaluation]. However, researchers have criticized the games HCI literature on neurodiversity for being prescriptive or focusing on "cures" rather than understanding the diversity of play experiences and preferences among neurodiverse players, and specifically call for more comparisons between neurotypical and neurodiverse behavioral patterns [@SpielGerling2021Purpose].
 
 A smaller number of studies have used behavioral trace data rather than self-report, and their findings sometimes diverge from survey-based accounts. Early analyses of EverQuest II trace data found that playtime did not differ by ethnic background, religious affiliation, or income [@WilliamsEtAl2008Who], but that women played approximately 15% more hours per week than men, were more motivated by social factors, and were more likely to under-report their playtime relative to logged data [@WilliamsEtAl2009Looking]. An analysis of League of Legends data showed that women had fewer matches played but accrued skill at the same rate, and were more likely to play support roles [@RatanEtAl2015Stand]. Beyond games, analyses of time-use diaries have shown that time spent playing video games is highly sensitive to total available leisure time for younger men, but not for younger women or older men [@AguiarEtAl2017Leisure].
 
@@ -649,7 +649,7 @@ Taken together, the existing literature provides a partial but fragmented pictur
 
 ## Present Study
 
-The present study thus attempts to improve the field's understanding of demographic differences in play behavior by leveraging the [redacted for anonymity] dataset. The [redacted] dataset is a publicly available dataset of 3,768 US and UK 18-40 year olds who contributed digital trace data from five gaming platforms (Xbox, Nintendo Switch, Steam, iOS and Android), who were screened using quasi-representative methods (with partial quotas for age, gender, and ethnicity). Analyses are guided by two research questions: 
+The present study thus attempts to improve the field's understanding of demographic differences in play behavior by leveraging the Open Play dataset [@BallouEtAl2025Open]. The Open Play dataset is a publicly available dataset of 3,768 US and UK 18-40 year olds who contributed digital trace data from five gaming platforms (Xbox, Nintendo Switch, Steam, iOS and Android), who were screened using quasi-representative methods (with partial quotas for age, gender, and ethnicity). Analyses are guided by two research questions: 
 
 *RQ1:* How do the volume, composition, and temporal distribution of observed play vary across age, gender, ethnicity, and neurodiversity in this dataset?
 
@@ -705,13 +705,14 @@ games_per_player <- hourly_telemetry |>
 
 ```
 
-The data for this study comprise a subset of the data from the [redacted for anonymity] study, version 1.1.0. In that study, participants provided access to automated records of their gaming history on one or more platforms (Xbox, Steam, Nintendo Switch, iOS, Android; Xbox is included for US participants only) and completed an intake survey followed by daily and biweekly surveys. The present study uses only the digital trace data from console and PC and demographic data from the intake survey, and does not include daily or biweekly survey data or mobile data (due to lower granularity compared to other trace data streams). Intake surveys were completed between `r intake_range_sentence`. Digital trace data span the following periods: `r telemetry_range_sentence`.
+The data for this study comprise a subset of the data from the Open Play study [@BallouEtAl2025Open], version 1.1.0. In that study, participants provided access to automated records of their gaming history on one or more platforms (Xbox, Steam, Nintendo Switch, iOS, Android; Xbox is included for US participants only) and completed an intake survey followed by daily and biweekly surveys. The present study uses only the digital trace data from console and PC and demographic data from the intake survey, and does not include daily or biweekly survey data or mobile data (due to lower granularity compared to other trace data streams). Intake surveys were completed between `r intake_range_sentence`. Digital trace data span the following periods: `r telemetry_range_sentence`.
 
 Participants were recruited in collaboration with two panel providers, Prolific and PureProfile. Participants were eligible if they were aged 18 or older, resided in the United States or United Kingdom, self-reported playing video games for at least 1 hour per week with at least 50% of their play happening on eligible platforms (Nintendo, Xbox, and Steam), and successfully linked at least one gaming account on Xbox, Steam, and/or Nintendo Switch with validated recent digital trace data. 
 
 The procedure for linking gameplay data differed per platform: Steam was collected through a custom platform developed for research purposes, while Xbox and Nintendo data were collected via non-financial data-sharing agreements with the platform owners. An overview of the procedure from the participant perspective is shown in Appendix @tbl-platforms, while full details of the recruitment procedures and study methodology are available in [@BallouEtAl2025Open].
 
-All data and analysis code are available on Zenodo ({{< meta data-url >}}).
+All data and analysis code are available on [repository link removed for anonymous review; anonymized supplementary materials uploaded to PCS].
+<!-- Zenodo ({{< meta data-url >}}). -->
 
 ## Participants
 
@@ -882,7 +883,7 @@ summary_table |>
 
 The following demographic variables were measured in the intake survey.
 
-*Age*: Participants entered their age as an integer. Because the multivariate visualizations used here (e.g., radar charts comparing genre profiles) require categorical groupings, continuous age is binned into four  groups (18–24, 25–30, 31–35, 36–40) for comparability with the other demographic dimensions.
+*Age*: Participants entered their age as an integer. Because the multivariate visualizations used here (e.g., radar charts comparing genre profiles) require categorical groupings, continuous age is binned into four groups (18–24, 25–30, 31–35, 36–40) for comparability with the other demographic dimensions.
 
 *Gender*: Participants selected from the following options: Woman, Man, Non-binary, Prefer to specify, and Prefer not to say. For simplicity, "non-binary" and "prefer to specify" were recoded as "Non-binary/other".
 
@@ -1101,7 +1102,7 @@ duration_neurotypical_fmt <- sprintf("%.0f", duration_neurotypical)
 
 @fig-play-volume visualizes the typical weekly playtime (Panel A, top row), total recorded sessions (Panel B, middle row), and typical session duration (Panel C, bottom row) for each group. The heavily overlapping histograms across groups indicate that group differences account for very little variation in playtime: in the sample, most groups showed similar distributions of play volume.
 
-A few trends nonetheless emerge: women played fewer weekly hours than men (`r hours_women_fmt` vs `r hours_men_fmt` median hours). There is a small observed difference in the total number of sessions played by participants with ADHD compared to neurotypical players (`r sessions_adhd_fmt` vs `r sessions_neurotypical_fmt`), but no difference in median session duration (`r duration_adhd_fmt` vs `r duration_neurotypical_fmt` minutes). Asian players in the sample had slightly lower playtime and sessions than other ethnic groups.
+A few trends nonetheless emerge: women played fewer weekly hours than men (`r hours_women_fmt` vs `r hours_men_fmt` mean hours). There is a small observed difference in the total number of sessions played by participants with ADHD compared to neurotypical players (`r sessions_adhd_fmt` vs `r sessions_neurotypical_fmt`), but no difference in median session duration (`r duration_adhd_fmt` vs `r duration_neurotypical_fmt` minutes). Asian players in the sample had slightly lower playtime and sessions than other ethnic groups.
 
 ::: {.place arguments='top, scope: "parent", float: true'}
 ```{r}
@@ -2024,7 +2025,7 @@ In short, individuals within the same demographic group differ from one another 
 
 The results presented here show a variety of trends among demographic groups in a diverse sample of UK and US adult video game players. Many these have been documented in prior survey-based research, such as the prevalence of sports game play among men and simulation game play among women [@PhanEtAl2012Examining] or the preference for RPGs among adults with autism [@MazurekEtAl2015Video]. Other patterns are intuitive and have been theorized, but rarely directly observed and quantified in naturalistic behavioral data, such as the 1 hour earlier peak time and higher weekend concentration for older players [@ReamEtAl2013Trends].
 
-However, despite the presence of these trends, the overall picture is one of substantial heterogeneity within groups, and thus overlap between them. For every observed difference, there are many individuals in the "opposite" group who show the same behavior. For example, although there is a marked difference in the average proportion of time men and women in the sample spent playing games in the shooter genre (`r men_shooter_pct`% vs `r women_shooter_pct`% on average), there are still `r women_above_result` who have a higher shooter proportion than the average man. Results showing that effectively all permutations of play volume, timing and genre allocation are present in all demographic groups serves as a form of counter-stereotypical examples, a method recommended for reducing and reversing implicit biases in games culture [@FlanaganKaufman2017Shifting]. 
+However, despite the presence of these trends, the overall picture is one of substantial heterogeneity within groups, and thus overlap between them. For every observed difference, there are many individuals in the "opposite" group who show the same behavior. For example, although there is a marked difference in the average proportion of time men and women in the sample spent playing games in the shooter genre (`r men_shooter_pct`% vs `r women_shooter_pct`% on average), there are still `r women_above_result` women who have a higher shooter proportion than the average man. Results showing that effectively all permutations of play volume, timing and genre allocation are present in all demographic groups serves as a form of counter-stereotypical examples, a method recommended for reducing and reversing implicit biases in games culture [@FlanaganKaufman2017Shifting]. 
 
 In other words: while trends emerge at a bird's eye view, knowing an individual's complete demographic profile tells us remarkably little about their actual play behavior. Even with all demographic variables combined, a researcher could explain at most `r max_steelman_r2_pct`% of the variance in any single play outcome (@tbl-variance-decomposition). These findings echo early trace data studies showing demographic categories explain minimal variance in play patterns [@WilliamsEtAl2008Who], but extend them to contemporary multi-platform contexts and provide explicit variance decomposition. 
 
@@ -2034,7 +2035,7 @@ With those caveats in mind, this work still offers several contributions for the
 
 ## Implications for the Use of Demographic Variables
 
-These findings complicate how demographic categories should function in games HCI theory. When within-group variance is ~18x larger than between-group variance, demographics may be valuable as contextual background variables but are unlikely to be useful as primary predictors of behavioral outcomes. Such empirical backing reinforces known challenges for theory, quantitative methods, and design.
+These findings complicate how demographic categories should function in games HCI theory. When within-group variance is at least 18x larger than between-group variance, demographics may be valuable as contextual background variables but are unlikely to be useful as primary predictors of behavioral outcomes. Such empirical backing reinforces known challenges for theory, quantitative methods, and design.
 
 On the theory side, I argue for improved specification of the specific *mechanisms* through which demographics matter rather than treating them as proxies for preferences. Although there is widespread recognition of the pitfalls of demographic essentialism at the theory level, empirical studies often use and interpret demographics are key predictors of outcomes such as motivational styles or player types [@Yee2006motivations], esports participation [@KordyakaEtAl2023Gender], or internet gaming disorder [@Lopez-FernandezEtAl2019Female]. Such use of demographic variables may serve as a proxy for preferences or behaviors, masking the underlying mechanistic differences on which the field could actually intervene. Future work with representative samples and/or qualitative methods can help unpack which of these trends generalize to other metrics of real-world play, and why they occur (access? cultural exposure? time constraints?).
 
@@ -2085,6 +2086,10 @@ The author declares no other potential financial, intellectual, or institutional
 NB has worked on scientific projects funded by government and charitable grants that used data from tech companies provided under a data-sharing agreement. NB has never received funding or compensation from the tech companies or other industries connected to the work presented here. 
 
 Data-sharing partners had no role in the design, analysis, or publication of results.  -->
+
+# Generative AI
+
+Claude Code (claude-opus-4-5-20251101) was used to prepare and document analysis code. The author takes full responsibility for the content of the analyses and any errors that may be present.
 
 # Acknowledgements
 
@@ -2155,11 +2160,14 @@ tibble(
 #| tbl-cap: "Top 5 games by total playtime for each demographic group (Nintendo and Steam only; Xbox titles excluded due to de-identification)."
 
 # Get top games per demographic group (excluding Xbox)
-top_games_by_demo <- hourly_telemetry |>
+# First prepare data with neurodiversity as a single column
+telemetry_with_demo <- hourly_telemetry |>
   filter(platform != "Xbox") |>
   left_join(demographics, by = "pid") |>
-  filter(!is.na(age_group)) |>
-  # Pivot to long form for all demographics
+  filter(!is.na(age_group))
+
+# Standard demographics (age, gender, ethnicity)
+top_games_standard <- telemetry_with_demo |>
   pivot_longer(
     cols = c(age_group, gender, ethnicity),
     names_to = "demo_type",
@@ -2167,7 +2175,28 @@ top_games_by_demo <- hourly_telemetry |>
   ) |>
   filter(!is.na(demo_group)) |>
   group_by(demo_type, demo_group, title_id) |>
-  summarise(total_hours = sum(minutes, na.rm = TRUE) / 60, .groups = "drop") |>
+  summarise(total_hours = sum(minutes, na.rm = TRUE) / 60, .groups = "drop")
+
+# Neurodiversity (non-exclusive categories handled separately)
+top_games_neuro <- bind_rows(
+  telemetry_with_demo |>
+    filter(is_neurotypical == TRUE) |>
+    group_by(title_id) |>
+    summarise(total_hours = sum(minutes, na.rm = TRUE) / 60, .groups = "drop") |>
+    mutate(demo_type = "neurodiversity", demo_group = "Neurotypical"),
+  telemetry_with_demo |>
+    filter(is_adhd == TRUE) |>
+    group_by(title_id) |>
+    summarise(total_hours = sum(minutes, na.rm = TRUE) / 60, .groups = "drop") |>
+    mutate(demo_type = "neurodiversity", demo_group = "ADHD"),
+  telemetry_with_demo |>
+    filter(is_autism == TRUE) |>
+    group_by(title_id) |>
+    summarise(total_hours = sum(minutes, na.rm = TRUE) / 60, .groups = "drop") |>
+    mutate(demo_type = "neurodiversity", demo_group = "Autism spectrum")
+)
+
+top_games_by_demo <- bind_rows(top_games_standard, top_games_neuro) |>
   # Get top 5 per demographic group
   group_by(demo_type, demo_group) |>
   slice_max(total_hours, n = 5) |>
@@ -2178,7 +2207,8 @@ top_games_by_demo <- hourly_telemetry |>
     demo_type = case_when(
       demo_type == "age_group" ~ "Age",
       demo_type == "gender" ~ "Gender",
-      demo_type == "ethnicity" ~ "Ethnicity"
+      demo_type == "ethnicity" ~ "Ethnicity",
+      demo_type == "neurodiversity" ~ "Neurodiversity"
     )
   )
 
@@ -2225,7 +2255,7 @@ build_radar_grid(
 
 ```{r}
 #| label: tbl-genre-playtime
-#| tbl-cap: "Proportion of playtime by raw genre categories across demographic groups. Values show percentage of total playtime within each group. The 'Radar' column shows the simplified category used in radar charts (— if not included)."
+#| tbl-cap: "Median individual genre allocation by raw genre categories across demographic groups. Values show median percentage of each player's playtime allocated to each genre. The 'Radar' column shows the simplified category used in radar charts (— if not included)."
 
 # Get all raw genres (before simplification)
 games_all_genres <- games |>
@@ -2234,6 +2264,7 @@ games_all_genres <- games |>
   distinct(original_name, genres) |>
   group_by(original_name) |>
   mutate(genre_weight = 1 / n()) |>
+
   ungroup()
 
 # Calculate playtime by raw genre and demographic
@@ -2248,46 +2279,54 @@ genre_playtime_raw <- hourly_telemetry |>
   left_join(demographics, by = "pid") |>
   filter(!is.na(age_group))
 
-# Helper to calculate props for a grouping variable
-calc_props <- function(data, group_var, demo_name) {
+# Step 1: Calculate individual-level genre proportions
+individual_genre_props <- genre_playtime_raw |>
+  group_by(pid, genres) |>
+  summarise(genre_minutes = sum(minutes_weighted, na.rm = TRUE), .groups = "drop") |>
+  group_by(pid) |>
+  mutate(individual_prop = genre_minutes / sum(genre_minutes) * 100) |>
+  ungroup()
+
+# Join demographic info back
+individual_with_demo <- individual_genre_props |>
+  left_join(
+    demographics |> select(pid, age_group, gender, ethnicity, is_neurotypical, is_adhd, is_autism),
+    by = "pid"
+  )
+
+# Helper to calculate median props for a grouping variable
+calc_median_props <- function(data, group_var, demo_name) {
   data |>
     filter(!is.na(.data[[group_var]])) |>
     group_by(.data[[group_var]], genres) |>
-    summarise(total = sum(minutes_weighted, na.rm = TRUE), .groups = "drop") |>
-    group_by(.data[[group_var]]) |>
-    mutate(prop = total / sum(total) * 100) |>
-    ungroup() |>
+    summarise(prop = median(individual_prop, na.rm = TRUE), .groups = "drop") |>
     rename(group = all_of(group_var)) |>
-    select(group, genres, prop) |>
     mutate(demo = demo_name)
 }
 
-# Calculate for all demographics
+# Calculate for all demographics using median of individual allocations
 all_genre_props <- bind_rows(
-  calc_props(genre_playtime_raw, "age_group", "Age"),
-  calc_props(genre_playtime_raw, "gender", "Gender"),
-  calc_props(genre_playtime_raw, "ethnicity", "Ethnicity"),
-  # Neurodiversity needs special handling
-  genre_playtime_raw |>
-    pivot_longer(
-      c(is_neurotypical, is_adhd, is_autism),
-      names_to = "neuro_type",
-      values_to = "has"
-    ) |>
-    filter(has == TRUE) |>
-    mutate(
-      group = case_when(
-        neuro_type == "is_neurotypical" ~ "Neurotypical",
-        neuro_type == "is_adhd" ~ "ADHD",
-        neuro_type == "is_autism" ~ "Autism"
-      )
-    ) |>
-    group_by(group, genres) |>
-    summarise(total = sum(minutes_weighted, na.rm = TRUE), .groups = "drop") |>
-    group_by(group) |>
-    mutate(prop = total / sum(total) * 100) |>
-    ungroup() |>
-    select(group, genres, prop) |>
+  calc_median_props(individual_with_demo, "age_group", "Age"),
+  calc_median_props(individual_with_demo, "gender", "Gender"),
+  calc_median_props(individual_with_demo, "ethnicity", "Ethnicity"),
+  # Neurodiversity (non-exclusive categories)
+  bind_rows(
+    individual_with_demo |>
+      filter(is_neurotypical == TRUE) |>
+      group_by(genres) |>
+      summarise(prop = median(individual_prop, na.rm = TRUE), .groups = "drop") |>
+      mutate(group = "Neurotypical"),
+    individual_with_demo |>
+      filter(is_adhd == TRUE) |>
+      group_by(genres) |>
+      summarise(prop = median(individual_prop, na.rm = TRUE), .groups = "drop") |>
+      mutate(group = "ADHD"),
+    individual_with_demo |>
+      filter(is_autism == TRUE) |>
+      group_by(genres) |>
+      summarise(prop = median(individual_prop, na.rm = TRUE), .groups = "drop") |>
+      mutate(group = "Autism")
+  ) |>
     mutate(demo = "Neuro")
 ) |>
   mutate(prop_fmt = sprintf("%.1f", prop))
@@ -2347,7 +2386,7 @@ genre_table <- all_genre_props |>
 
 genre_table |>
   tt(
-    notes = "Values are percentages of total playtime within each demographic group. 'Radar' shows the simplified category used in the main text radar plot (— if genre is not included in the 8 simplified categories). Neuro = Neurotypical, Autis = Autism spectrum.",
+    notes = "Values are median percentages of individual players' genre allocations (matching radar chart methodology). 'Radar' shows the simplified category used in the main text radar plot (— if genre is not included in the 8 simplified categories). Neuro = Neurotypical, Autis = Autism spectrum.",
     width = 1
   ) |>
   style_tt(fontsize = 0.5) |>

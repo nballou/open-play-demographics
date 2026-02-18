@@ -79,3 +79,13 @@ index.tex
 index.html
 .gitignore
 index.rmarkdown
+
+# Alt text reference file
+alt-text.txt
+
+# Anonymous versions for blinded submission
+CITATION-anon.cff
+README-anon.md
+_quarto-anon.yml
+references-anon.bib
+index-anon-header.yml

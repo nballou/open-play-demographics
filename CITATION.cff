@@ -1,27 +1,37 @@
 cff-version: 1.2.0
-title: "TODO"
-message: "This repository contains an archived release of our reproducible manuscript about gaming demographics."
+title: "Multi-platform Trace Data Reveal Demographic Differences in Video Game Play, but Individuals Vary Far More"
+message: "If you use this code or analysis, please cite it as below."
 type: software
 authors:
   - family-names: Ballou
     given-names: Nick
     orcid: "https://orcid.org/0000-0003-4126-0696"
     affiliation: "Imperial College London, Dyson School of Design Engineering"
+    email: nick@nickballou.com
 abstract: >-
-  Code and materials for 'All BANG, little buck: Need-related experiences
-  are weakly linked with behavior in the video game domain.'
+  Reproducible manuscript and analysis code examining demographic differences
+  in video game play patterns. Using behavioral logs from Steam, Xbox, and
+  Nintendo spanning 1.5 million hours from 3,768 US and UK adults (18-40 years
+  old), this study presents a visualization-driven descriptive analysis of how
+  play patterns differ according to age, gender, ethnicity, and neurodiversity.
 
-  Contents: Reproducible Quarto manuscript with all analyses; R code for
-  multilevel within-between models, multiple imputation, and visualizations;
-  helper functions for processing multi-platform digital trace data.
+  Key findings include temporal differences in play (older players peak earlier),
+  engagement span differences (women re-engage over longer periods), and genre
+  preference variations across groups. Despite observable trends, demographic
+  categories explain at most ~5% of behavioral variance—within-group variation
+  far exceeds between-group differences.
 
-  This repository analyzes data from the Open Play dataset
-  (https://doi.org/10.5281/zenodo.17536656), which contains 1.5 million hours of digital trace data from 2k+ U.S. and UK players, combined with repeated psychological measures.
+  This repository contains the Quarto manuscript, R analysis code, and helper
+  functions for processing multi-platform digital trace data.
 keywords:
   - video games
+  - player demographics
+  - behavioral data
   - digital trace data
   - reproducible research
-  - demographics
-license: CC0-1.0
+  - variance decomposition
+  - genre preferences
+license: GPL-3.0
 repository-code: "https://github.com/nballou/open-play-demographics"
 url: "https://nballou.github.io/open-play-demographics/"
+date-released: 2026-02-18
